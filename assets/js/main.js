@@ -21,6 +21,15 @@ function convertPokemonToLi(pokemon) {
             </div>
         </li>
     `
+    //aqui vou colocar o a função de carregar uma pagina com o pokemon
+     li.addEventListener('click', function() {
+        pokeApi.getPokemonDetail(pokemon).then((pokemonDetail) => {
+         
+        });
+    });
+
+    return li;
+    
 }
 
 function loadPokemonItens(offset, limit) {
